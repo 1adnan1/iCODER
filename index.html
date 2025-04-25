@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iCODER - Web Development Resource</title>
+    <link rel="shortcut icon" href="f1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+    <style>
+        /* .carousel-inner{
+            width: 100vw;
+            height: 40vh;
+        } */
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-dark">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#">iCODER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link  " aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Web development</a></li>
+                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+
+                    <li><a class="dropdown-item" href="#">Write us</a></li>
+
+                </ul>
+            </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-toggle="modal" data-target="#logiinModal" > Login</button>
+              <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal" > Sign Up</button>
+            </div> 
+          </div>
+        </div>
+      </nav>
+
+<!-- LoginModal -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1"  aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome to iCODER</h2>
+              <p>Providing new Technology</p>
+              <button class="btn btn-danger">Technology</button>
+              <button class="btn btn-primary">Development</button>
+              <button class="btn btn-success">Tech Knowledge</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>New Tech World</h5>
+              <p> Tech is the method to creat new world </p> 
+              <button class="btn btn-danger">Technology</button>
+              <button class="btn btn-primary">Development</button>
+              <button class="btn btn-success">Tech Knowledge</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tech News</h5>
+              <p>TAll tech new , updates , trends</p>
+              <button class="btn btn-danger">Technology</button>
+              <button class="btn btn-primary">Development</button>
+              <button class="btn btn-success">Tech Knowledge</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                  <h3 class="mb-0">Global Coding </h3>
+                  <div class="mb-1 text-body-secondary">Nov 12</div>
+                  <p class="card-text mb-auto"> Describe large, rare chain reactions that can be triggered by small, initial events in complex systems.</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="200" height="250"  src="5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                  <h3 class="mb-0">Learn Web Designing</h3>
+                  <div class="mb-1 text-body-secondary">Nov 11</div>
+                  <p class="mb-auto">The process of planning and creating the visual layout and aesthetics of a website.</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250"  src="2.jpg" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">New</strong>
+                  <h3 class="mb-0">Artificial Intelligence </h3>
+                  <div class="mb-1 text-body-secondary">Nov 12</div>
+                  <p class="card-text mb-auto">Focuses on creating machines capable of performing tasks that typically require human intelligence</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="200" height="250"  src="3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success-emphasis">Tech</strong>
+                  <h3 class="mb-0">Learn Robotics</h3>
+                  <div class="mb-1 text-body-secondary">Nov 11</div>
+                  <p class="mb-auto">The principles of how robots are designed, built, programmed, and operated</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250"  src="4.jpg" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© iCODER.com · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
